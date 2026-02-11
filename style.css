@@ -1,0 +1,31 @@
+body { margin: 0; background: #050505; color: #eee; font-family: sans-serif; }
+#login-screen { height: 100vh; display: flex; align-items: center; justify-content: center; }
+.login-box { background: #1a1a1a; padding: 2rem; border-radius: 8px; text-align: center; border: 1px solid #333; }
+input { background: #000; border: 1px solid #444; color: white; padding: 10px; border-radius: 4px; }
+button { background: #5865F2; color: white; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer; }
+
+#chat-screen { height: 100vh; display: flex; flex-direction: column; }
+.header { padding: 15px; background: #0a0a0a; border-bottom: 1px solid #111; display: flex; justify-content: space-between; }
+#messages { flex: 1; overflow-y: auto; padding: 15px; }
+#chat-form { padding: 15px; background: #0a0a0a; display: flex; gap: 10px; }
+#msg-input { flex: 1; }
+
+.message-row { margin-bottom: 8px; font-size: 14px; }
+.tag { font-size: 10px; padding: 2px 5px; border-radius: 3px; font-weight: bold; margin-right: 5px; }
+.owner { background: #ff0000; }
+.mod { background: #0080ff; }
+
+.emoji { width: 24px; vertical-align: middle; }
+
+@keyframes red-sparkle {
+    0%, 100% { color: #ff0000; text-shadow: 0 0 5px #ff0000; }
+    50% { color: #fff; text-shadow: 0 0 15px #ff0000; }
+}
+.optimus-sparkle { animation: red-sparkle 1s infinite; font-weight: bold; }
+
+@keyframes blue-sparkle {
+    0%, 100% { color: #0080ff; text-shadow: 0 0 5px #0080ff; }
+    50% { color: #fff; text-shadow: 0 0 15px #0080ff; }
+}
+.futbol-sparkle { animation: blue-sparkle 1s infinite; font-weight: bold; }
+.user-name { color: #ff69b4; font-weight: bold; }
